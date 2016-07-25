@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: Blade
+Version: 0.1
+Summary: A simple pygame demo.
+Home-page: This project doesn't have one at the moment.
+Author: AardvarkTotoro
+Author-email: UNKNOWN
+License: UNKNOWN
+Description: A small demo of a fencing-inspired RPG combat system. Contains tutorial and a final boss fight. Badly-written RPG dialog and blatant Undertale/Pokemon Mystery Dungeon references are complementary.
+Keywords: game demo pygame fencing
+Platform: UNKNOWN
