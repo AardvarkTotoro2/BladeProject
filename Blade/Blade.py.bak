@@ -112,7 +112,7 @@ def Posit(Pos,Color):
     pygame.draw.line(Field,Color,(300,300-NPos),(320,300-NPos),2)
 
 def Text(Text,Speak,Char):
-    print(('*'+str(Speak)+': '+str(Text)))
+    print('*'+str(Speak)+': '+str(Text))
     if Char != None:
         Field.blit(Char,(260,260))
     pygame.draw.circle(Field,EMag,(10,10),10,2)
@@ -122,7 +122,7 @@ def Text(Text,Speak,Char):
         if event.type == pygame.KEYDOWN and event.key == pygame.K_RETURN:
             break
 def Tex(Text,Speak,Char):
-    print(('*'+str(Speak)+': '+str(Text)))
+    print('*'+str(Speak)+': '+str(Text))
 
 def Cull(Blade,Reach):
     TReach = 0
@@ -181,8 +181,7 @@ def Move(Pos,DState,Active):
     return Pos, DState, Active
     
 
-def Flit(Sprite, xxx_todo_changeme, EPos, IPos):
-    (x,y) = xxx_todo_changeme
+def Flit(Sprite, (x,y), EPos, IPos):
     if IPos > EPos:
         #print('Lets Go!')
         #print(IPos-EPos)
@@ -209,9 +208,9 @@ def DrawStart(Pos):
     return
 Pos = 450
 os.system('clear')
-Name = input(str("What is your name?:"))
+Name = raw_input(str("What is your name?:"))
 #while(True):
-NFriend = input(str("What is the name of your best friend?:"))
+NFriend = raw_input(str("What is the name of your best friend?:"))
     #LFriend = raw_input(str("What is the name of a friend you will never mmet again?:"))
     #if NFriend != LFriend:
 #        break
@@ -1002,7 +1001,7 @@ while(True):
     Tex("Allez!",'DUEL',None)
     Clap.play()
     while(True):
-        print((str(State)))
+        print(str(State))
         if State == 'Guard':
             DActive = True
             while(True):
@@ -1468,7 +1467,7 @@ elif Pos == 1000:
     Text("(...It's dark in here...and unexpectedly chilly...there's an icy breeze from somewhere...)",Name,None)
     Text("You're inside my soul. Why don't you EXIT? It's not a nice place to be, trust me.",NFriend,None)
     while(True):
-        Phrase = str(eval(input('}')))
+        Phrase = str(input('}'))
         if Phrase == 'EXIT':
             Clear()
             pygame.display.flip()
